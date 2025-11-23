@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>سبعاوي</title>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: "Tajawal", sans-serif;
+    }
+
+    .banner {
+        position: relative;
+        width: 900px;
+        height: 300px;
+        border-radius: 25px;
+        overflow: hidden;
+        box-shadow: 0 0 25px rgba(255, 255, 255, 0.4);
+    }
+
+    .banner img.bg {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: brightness(0.6);
+    }
+
+    .pfp {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 5px solid #fff;
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+        animation: float 3s ease-in-out infinite;
+    }
+
+    .pfp img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    @keyframes float {
+        0% { transform: translate(-50%, -50%) translateY(0px); }
+        50% { transform: translate(-50%, -50%) translateY(-10px); }
+        100% { transform: translate(-50%, -50%) translateY(0px); }
+    }
+
+    .username {
+        position: absolute;
+        bottom: 20px;
+        width: 100%;
+        text-align: center;
+        font-size: 40px;
+        font-weight: bold;
+        color: #fff;
+        text-shadow: 0 0 10px #fff;
+    }
+
+    .discord-btn {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        padding: 12px 25px;
+        background: #5865F2;
+        color: #fff;
+        text-decoration: none;
+        font-size: 20px;
+        border-radius: 12px;
+        box-shadow: 0 0 10px rgba(88,101,242,0.7);
+        transition: 0.3s;
+    }
+
+    .discord-btn:hover {
+        transform: scale(1.07);
+        box-shadow: 0 0 15px rgba(88,101,242,1);
+    }
+
+</style>
+</head>
+<body>
+
+<div class="banner">
+
+    <img class="bg" src="https://cdn.discordapp.com/banners/1439241650840014939/a_6abddfaf5241a61857c3fc929430c3c8.gif?size=1024&animated=true">
+
+    <div class="pfp">
+        <img src="https://cdn.discordapp.com/avatars/1439241650840014939/a_28a9b59a0e9cca19f83691b84a7c2f4e.gif?size=1024&animated=true">
+    </div>
+
+    <div class="username">سبعاوي</div>
+
+    <a class="discord-btn" href="https://discord.com/users/1439241650840014939" target="_blank">
+        Discord
+    </a>
+
+</div>
+
+</body>
+</html>
